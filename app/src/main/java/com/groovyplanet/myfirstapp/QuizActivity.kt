@@ -14,7 +14,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.groovyplanet.myfirstapp.databinding.ActivityQuizBinding
-import org.w3c.dom.Text
 
 const val TAG = "myLog"
 
@@ -33,9 +32,6 @@ class QuizActivity : AppCompatActivity() , View.OnClickListener {
     private var three : TextView? = null
     private var four : TextView? = null
     private var nextTtn : TextView? = null
-
-    private var name : String? = null
-
     
     //퀴즈데이터 연결
     private var quizList : ArrayList<QuizDTO> = QuizRepository.getQuiz()
@@ -46,6 +42,8 @@ class QuizActivity : AppCompatActivity() , View.OnClickListener {
     private var optionList = ArrayList<TextView>()
     //정답카운트
     private var collectCnt = 0
+    //유저이름
+    private var name : String? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -109,10 +107,11 @@ class QuizActivity : AppCompatActivity() , View.OnClickListener {
         optionList.add(three!!)
         optionList.add(four!!)
 
-        //멤버변수 name에 저장
+        //첫번째 엑티비티에서 넘어온값을 전역변수로 저장
         name = intent.getStringExtra("name")
 
-    }
+
+    } //end create
 
     //툴바 메뉴 활성화
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -206,8 +205,8 @@ class QuizActivity : AppCompatActivity() , View.OnClickListener {
                         userAnswer = 0 //유저의 정답 초기화
                     } else { //마지막인 경우
                         val intent = Intent(this, ResultActivity::class.java)
-                        intent.putExtra("collectCnt" , collectCnt)
-                        intent.putExtra("name" , name)
+                        intent.putExtra("name", name)
+                        intent.putExtra("collectCnt", collectCnt)
                         startActivity(intent)
                         finish() //현재 엑티비티는 종료
                     }

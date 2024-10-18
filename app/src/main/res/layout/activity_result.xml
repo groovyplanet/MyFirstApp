@@ -23,35 +23,17 @@
         />
 
     <ImageView
-        android:id="@+id/top"
-        android:layout_width="247dp"
-        android:layout_height="171dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/top"
-        android:visibility="gone" />
-
-    <ImageView
-        android:id="@+id/middle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/result"
         android:layout_marginTop="10dp"
         />
 
-    <ImageView
-        android:id="@+id/fuck"
-        android:layout_width="241dp"
-        android:layout_height="199dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/fuck"
-        android:visibility="gone"
-        />
-
     <TextView
         android:id="@+id/result_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="이름: ${name} \n총 ${collectCnt} 문제 정답입니다"
+        android:text="이름: 홍길동\n총 x문제 정답입니다"
         android:gravity="center"
         android:textSize="20sp"
         android:textColor="@color/myColor1"
@@ -60,7 +42,7 @@
         />
 
     <Button
-        android:id="@+id/resert_btn"
+        android:id="@+id/result_btn"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="다시 시도하기"

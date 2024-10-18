@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "이름을 입력하세요", Toast.LENGTH_SHORT).show()
             } else {
                 val intent = Intent(this, QuizActivity::class.java)
-                intent.putExtra("name",binding.nameText.text.toString()) // 사용자가 작성한 이름 (tostring을 붙여야만 할 수 있다.)
+                intent.putExtra("name", binding.nameText.text.toString() ) //사용자가 작성한 이름
                 startActivity(intent)
             }
         }
