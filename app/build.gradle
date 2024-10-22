@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.groovyplanet.myfirstapp'
+    namespace 'com.coding404.myfirstapp'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.groovyplanet.myfirstapp"
+        applicationId "com.coding404.myfirstapp"
         minSdk 24
         targetSdk 34
         versionCode 1
@@ -30,13 +30,13 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    
-//    뷰바인딩 방법 활성화
-    viewBinding{
-        enable=true
+    //뷰바인딩 방법 활성화
+    viewBinding {
+        enabled = true
     }
-    
-    
+
+
+
 }
 
 dependencies {

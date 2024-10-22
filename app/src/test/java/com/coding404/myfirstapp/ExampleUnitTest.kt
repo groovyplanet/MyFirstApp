@@ -1,4 +1,4 @@
-package com.groovyplanet.myfirstapp
+package com.coding404.myfirstapp
 
 import org.junit.Test
 

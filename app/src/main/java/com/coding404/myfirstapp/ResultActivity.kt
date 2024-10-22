@@ -1,11 +1,11 @@
-package com.groovyplanet.myfirstapp
+package com.coding404.myfirstapp
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.groovyplanet.myfirstapp.databinding.ActivityResultBinding
+import com.coding404.myfirstapp.databinding.ActivityResultBinding
 
 class ResultActivity : AppCompatActivity() {
 

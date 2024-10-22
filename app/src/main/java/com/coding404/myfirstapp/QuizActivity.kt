@@ -1,4 +1,4 @@
-package com.groovyplanet.myfirstapp
+package com.coding404.myfirstapp
 
 import android.content.Intent
 import android.graphics.Color
@@ -13,7 +13,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.groovyplanet.myfirstapp.databinding.ActivityQuizBinding
+import com.coding404.myfirstapp.databinding.ActivityQuizBinding
 
 const val TAG = "myLog"
 

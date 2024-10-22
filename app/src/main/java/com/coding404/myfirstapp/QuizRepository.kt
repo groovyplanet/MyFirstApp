@@ -1,4 +1,4 @@
-package com.groovyplanet.myfirstapp
+package com.coding404.myfirstapp
 
 
 //object 싱글톤 클래스가 됨
